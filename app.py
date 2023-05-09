@@ -5,13 +5,10 @@ from api.clientes import route_clientes
 from api.tiendas import route_tiendas
 from api.pedidos import route_pedidos
 app.register_blueprint(route_clientes, url_prefix="/api")
-<<<<<<< HEAD
 
 app.register_blueprint(route_pedidos, url_prefix="/api")
-=======
 app.register_blueprint(route_tiendas, url_prefix="/api")
 
->>>>>>> 7f80eb6782a68e0a1fa4fa473950363cb443bef1
 @app.route('/', methods=['GET'])
 def index():
     return "Prueba"
