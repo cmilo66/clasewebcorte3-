@@ -1,6 +1,9 @@
 from flask import Flask,  redirect, request, jsonify, json, session, render_template
 from config.bd import db, app, ma
 
+from api.clientes import route_clientes
+from api.tiendas import route_tiendas
+
 @app.route('/', methods=['GET'])
 def index():
     return "Prueba"
